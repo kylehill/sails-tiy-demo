@@ -21,6 +21,11 @@
 
 module.exports.connections = {
 
+  mongolab: {
+    adapter: 'sails-mongo',
+    host: process.env.MONGOLAB_URI
+  },
+
   /***************************************************************************
   *                                                                          *
   * Local disk storage for DEVELOPMENT ONLY                                  *
